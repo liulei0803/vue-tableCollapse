@@ -1,17 +1,17 @@
 /**
- * 表格数据展开收起功能
+ * 琛ㄦ牸鏁版嵁灞曞紑鏀惰捣鍔熻兘
  */
 var collapseTableTemplate =
     `<div id="{{divId}}">
     <a v-show="collapsed" style="cursor: pointer;" @click="collapse(false)">
-        <img src="../../../assets/images/down.png" width="16" height="16"><br>
-        <span>向下展开</span>
+        <img src="./down.png" width="16" height="16"><br>
+        <span>鍚戜笅灞曞紑</span>
     </a>
     <a v-show="!collapsed" style="cursor: pointer;" @click="collapse(true)">
-        <img src="../../../assets/images/up.png" width="16" height="16"><br>
-        <span>全部收起</span>
+        <img src="./up.png" width="16" height="16"><br>
+        <span>鍏ㄩ儴鏀惰捣</span>
     </a>
-    <span v-show="list.length==0">暂无数据</span>
+    <span v-show="list.length==0">鏆傛棤鏁版嵁</span>
 </div>`;
 Vue.component('collapse-table', {
     template: collapseTableTemplate,
